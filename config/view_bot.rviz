@@ -7,7 +7,6 @@ Panels:
         - /Global Options1
         - /LaserScan1/Topic1
         - /Map2
-        - /Map2/Status1
       Splitter Ratio: 0.514970064163208
     Tree Height: 702
   - Class: rviz_common/Selection
@@ -81,20 +80,19 @@ Visualization Manager:
       Show Names: true
       Tree:
         map:
-          {}
-        odom:
-          base_link:
-            base_footprint:
-              {}
-            chassis:
-              caster_wheel:
+          odom:
+            base_link:
+              base_footprint:
                 {}
-              lidar_frame:
+              chassis:
+                caster_wheel:
+                  {}
+                lidar_frame:
+                  {}
+              left_wheel:
                 {}
-            left_wheel:
-              {}
-            right_wheel:
-              {}
+              right_wheel:
+                {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -278,16 +276,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 13.849374771118164
+      Distance: 10.724955558776855
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.5161969661712646
-        Y: -4.354181289672852
-        Z: 0.7856024503707886
+        X: -0.4398288130760193
+        Y: -4.208159446716309
+        Z: 0.7731655240058899
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
