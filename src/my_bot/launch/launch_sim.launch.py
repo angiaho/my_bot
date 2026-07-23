@@ -43,7 +43,7 @@ def generate_launch_description():
         package="twist_mux",
         executable="twist_mux",
         parameters=[twist_mux_params, {'use_sim_time': True}],
-        remappings=[('/cmd_vel_dut','/diff_cont/cmd_vel_unstamped')]
+        remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
     )
 
     # Run SLAM Toolbox 
@@ -54,7 +54,7 @@ def generate_launch_description():
         )]),
         launch_arguments={
             'use_sim_time': 'true',
-            'params_file': slam_params_file
+            'slam_params_file': slam_params_file
         }.items()
     )
 
